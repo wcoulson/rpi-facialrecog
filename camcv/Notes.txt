@@ -1,0 +1,14 @@
+June 2 2014:
+
+So far i have gotten the pie ad the camera together and they are recording images both still and video.  I have altered the Raspivid.c file and the CMakeLists.txt to include opencv and the facerec headers.
+I can now capture video on the rpi camera and display that video in an opencv window.  Heres how it was done so far.  
+
+1.  I made a copy of the rpi raspistill and raspivid files and copied them to a seperate directory
+2.  I created and altered a cmakelist to compile all the files i would need and the i duplicated both the raspistill.c as camcv.c, and the raspivid.c as camcv_vid0
+3.  I altered the cmake to accept the changes and include the proper directories.
+
+* now that i have all this stuff working i have to understand what it is doing - I will need to look slowly through the Raspivid.c file and try to understand what its doing.  I should also look through
+  the RaspiStill.c, the facerec.c, and of course all of the opencv software documentation.  I will write out my own notes and maybe even do some video tutorials on it.
+
+* I should also start some practice and playing with these files just to get use to their capabilities
+
